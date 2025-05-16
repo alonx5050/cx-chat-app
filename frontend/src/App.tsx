@@ -1,16 +1,12 @@
-import { Button, Typography, Container, CssBaseline } from '@mui/material'
+import { Container, CssBaseline } from '@mui/material'
+import ChatPage from './pages/ChatPage'
 
 function App() {
   return (
     <>
       <CssBaseline />
-      <Container maxWidth="sm" style={{ marginTop: '2rem' }}>
-        <Typography variant="h4" gutterBottom>
-          ✅ React + MUI Frontend is Working!
-        </Typography>
-        <Button variant="contained" color="primary">
-          Test Button
-        </Button>
+      <Container maxWidth="sm" sx={{ px: { xs: 1, sm: 2 }, py: 4 }}>
+        <ChatPage />
       </Container>
     </>
   )
