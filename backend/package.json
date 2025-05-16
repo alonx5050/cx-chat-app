@@ -5,18 +5,21 @@
   "main": "index.js",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
-    "seed": "ts-node-dev src/seed/seed.ts"
+    "seed": "ts-node-dev src/seed/seed.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@prisma/client": "^6.8.1",
+    "backend": "file:",
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
     "express": "^5.1.0"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.18",
     "@types/express": "^5.0.1",
     "@types/node": "^22.15.18",
     "prisma": "^6.8.1",
